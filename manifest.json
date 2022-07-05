@@ -1,0 +1,14 @@
+{
+  "name": "GCP Navbar Color Changer",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Add banner and change color of GCP Dashboard header based on project environment.",
+  "permissions": [],
+  "host_permissions": ["https://console.cloud.google.com/*"],
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "matches": ["https://console.cloud.google.com/*"]
+    }
+  ]
+}
